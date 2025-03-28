@@ -1,0 +1,9 @@
+1 200 Motorola
+5 10 Celular Motorola de buena calidad
+Moto Edge 50
+2 300 Samsung
+5 10 Celular Samsung de buena calidad
+Samsung S4 
+3 500 Apple
+5 10 Celular Apple de buena calidad
+Iphone 13 Pro Max     
