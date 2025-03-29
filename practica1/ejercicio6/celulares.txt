@@ -1,0 +1,15 @@
+1 200.00    Motorola
+5 10    Celular Motorola de buena calidad
+Moto Edge 50
+2 300.00    Samsung
+5 10    Celular Samsung de buena calidad
+Samsung S4 
+3 500.00    Apple
+5 10    Celular Apple de buena calidad
+Iphone 13 Pro Max   
+123 150.00   Xiaomi
+0 5   Celular Xiaomi de buena calidad
+Xiaomi
+154 50.00   Blackberry
+5 2   Celular Blackberry viejardo
+Blackberri R3
