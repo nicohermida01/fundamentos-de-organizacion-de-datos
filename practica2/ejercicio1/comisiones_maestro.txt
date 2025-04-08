@@ -1,0 +1,6 @@
+101 4551.25  Juan Pérez
+102 4100.40  María Gómez
+103 3400.50  Carlos López
+104 2200.30  Laura Méndez
+105 1950.00  Ana Torres
+106 2500.00  Pedro Ruiz
