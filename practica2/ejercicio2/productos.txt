@@ -1,0 +1,10 @@
+101 150.0 30 10 Lavandina
+102 250.5 20 5 Detergente
+103 300.0 15 7 Desinfectante
+104 180.75 40 12 Jabón Líquido
+105 120.99 60 15 Limpiavidrios
+106 220.25 25 8 Limpiador Multiuso
+107 90.0 50 20 Esponjas
+108 75.5 100 30 Trapos de Piso
+109 310.0 10 5 Cera para Pisos
+110 199.9 35 10 Desodorante de Ambientes
