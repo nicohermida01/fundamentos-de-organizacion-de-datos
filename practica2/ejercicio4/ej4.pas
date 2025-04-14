@@ -1,5 +1,6 @@
 program ejercicio4P2;
 const stopValue = -1;
+const cantDetalles = 30;
 type
   producto = record
     codigo, stock, stockMin: integer;
@@ -11,8 +12,8 @@ type
   end;
   maestroFile = file of producto;
   detalleFile = file of venta;
-  detallesArray = array [0..29] of detalleFile;
-  ventasArray = array [0..29] of venta;
+  detallesArray = array [1..cantDetalles] of detalleFile;
+  ventasArray = array [1..cantDetalles] of venta;
   
 procedure leer(var det: detalleFile; var dato: venta);
 begin
@@ -24,16 +25,16 @@ procedure minimo(var detalles: detallesArray; var ventas: ventasArray; var min: 
 var
   i, toRead: integer;
 begin
-  min:= ventas[0];
-  toRead:= 0;
-  for i:= 1 to 29 do begin
+  min:= ventas[1];
+  toRead:= 1;
+  for i:= 2 to cantDetalles do begin
     if (ventas[i].codigo < min.codigo) then begin
       min:= ventas[i];
       toRead:= i;
     end;
   end;
   
-  leer(detalles[toRead], ventas[toRead]);
+  leer(detalles[toRead], ventas[toRead]); // queda guardado el siguiente reg del seleccionado como "min"
 end;  
 
 var
@@ -50,13 +51,13 @@ begin
   reset(maestro);
   assign(sinStock, 'por_debajo_del_minimo.txt');
   rewrite(sinStock);
-  for i:= 0 to 29 do begin
+  for i:= 1 to cantDetalles do begin
     Str(i, numStr);
     assign(detalles[i], 'venta-'+numStr);
     reset(detalles[i]);
   end;
   
-  for i:= 0 to 29 do leer(detalles[i], ventas[i]);
+  for i:= 1 to cantDetalles do leer(detalles[i], ventas[i]);
   minimo(detalles, ventas, min);
   
   while(min.codigo <> stopValue) do begin
@@ -82,7 +83,7 @@ begin
   end;
   
   close(maestro);
-  for i:= 0 to 29 do begin
+  for i:= 1 to cantDetalles do begin
     close(detalles[i]);
   end;
   close(sinStock);
